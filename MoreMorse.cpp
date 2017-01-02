@@ -22,8 +22,7 @@ class info
         char label[30];
         void getinfo();
         void seeinfo();
-        char* passMsg();
-        
+        char* passMsg();   
 }st;
 
 char* info::passMsg()
@@ -66,6 +65,7 @@ void entermsg()
     fp.close();
     cout<<"\n\n   Message Logged!";
 }
+
 void viewmsg()
 {
     char choice,ch,LABEL[30];
@@ -88,6 +88,7 @@ void viewmsg()
                         }
                         fp.close();
                     break;
+			
             case '2':
                         cout<<"\n\n Enter label to search for : ";
                         cin.getline(LABEL,30);
@@ -103,9 +104,9 @@ void viewmsg()
                                 cin>>ch;
                                 cin.ignore();
                                 if(ch=='y'||ch=='Y')
-								{	
-									blinkstring(st.passMsg());
-								}
+				{	
+					blinkstring(st.passMsg());
+				}
                             }
                         }
                         if(flag)
@@ -113,6 +114,7 @@ void viewmsg()
 
                         fp.close();
                     break;
+			
             default:    cout<<"Wrong choice ";
         }
         cout<<"\n\n\tWant to go back to the previous menu ? (Y/N) \n";
@@ -124,7 +126,6 @@ void viewmsg()
 
 void deleteemsg()
 {
-
     char LABEL[30];
     fstream fp2;
 
