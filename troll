@@ -20,7 +20,7 @@ void msgroll(char *text,int n)
 		{	
 			system("sleep 0.1s");
 			cout<<text[i];
-			fflush(stdout);
+			fflush(stdout);			//To release buffer
 		}
 		system("clear");
 	}
