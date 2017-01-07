@@ -155,48 +155,49 @@ void deleteemsg()
 int main()
 {
 	setgpiopin(1);
-    char ch,choice;
-    while(ch!='n'&&ch!='N')
-    {
-        cout<<"\n\n\t\t\t         <==========>\n"
-            <<"\t\t\t\t     MENU\n"
-            <<"\t\t\t         <==========>\n\n\n"
-            <<"\t  1. Enter new message. "
-            <<"\n\n\t  2. View earlier messages. "
-            <<"\n\n\t  3. Delete earlier messages. "
-            <<"\n\n\t  4. Quit";
-        cout<<"\n\n\t\t\tEnter choice (1-4): ";
-        cin>>choice;
-        cin.ignore();
-        switch(choice)
-        {
-            case '1':   system("clear");
-                        msgroll("LOADING...",2);
-                        entermsg();
-                    break;
-            case '2':   system("clear");
-                        msgroll("LOADING...",2);
-                        viewmsg();
-                    break;
-            case '3':   system("clear");
-                        msgroll("LOADING...",2);
-                        deleteemsg();
-                    break;
-            case '4':   system("clear");
-                        system("sl");
-                        cout<<"\t\t\t\tTHANK YOU!! \n";
-                        system("sleep 1s");
-                        exit(0);
-            default:    cout<<"\n\tWrong choice! ";
-        }
-        cout<<"\n\n\tWant to go back to the main menu?  (Y/N) ?";
-        cin>>ch;
-        cin.ignore();
-        system("clear");
-    }
-    system("sl");
-    cout<<"\t\t\t\tTHANK YOU!! \n";
-    system("sleep 1s");
+	intro();
+    	char ch,choice;
+	while(ch!='n'&&ch!='N')
+    	{
+        	cout<<"\n\n\t\t\t         <==========>\n"
+            	    <<"\t\t\t\t     MENU\n"
+		    <<"\t\t\t         <==========>\n\n\n"
+		    <<"\t  1. Enter new message. "
+		    <<"\n\n\t  2. View earlier messages. "
+		    <<"\n\n\t  3. Delete earlier messages. "
+		    <<"\n\n\t  4. Quit";
+		cout<<"\n\n\t\t\tEnter choice (1-4): ";
+		cin>>choice;
+		cin.ignore();
+		switch(choice)
+		{
+		    case '1':   system("clear");
+				msgroll("LOADING...",2);
+				entermsg();
+			    break;
+		    case '2':   system("clear");
+				msgroll("LOADING...",2);
+				viewmsg();
+			    break;
+		    case '3':   system("clear");
+				msgroll("LOADING...",2);
+				deleteemsg();
+			    break;
+		    case '4':   system("clear");
+				system("sl");
+				cout<<"\t\t\t\tTHANK YOU!! \n";
+				system("sleep 1s");
+				exit(0);
+		    default:    cout<<"\n\tWrong choice! ";
+		}
+		cout<<"\n\n\tWant to go back to the main menu?  (Y/N) ?";
+		cin>>ch;
+		cin.ignore();
+		system("clear");
+	}
+	system("sl");
+    	cout<<"\t\t\t\tTHANK YOU!! \n";
+	system("sleep 1s");
 }
 
 
