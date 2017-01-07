@@ -25,3 +25,20 @@ void msgroll(char *text,int n)
 		system("clear");
 	}
 }
+void intro()
+{
+	system("clear");	
+	system("figlet Welcome user...");
+	gotoxy(16,8);
+	system("sleep 0.7s");
+	cout<<"This is .... \n\t\t";
+	system("sleep 1.4s");
+	system("toilet MORSE PI");
+	system("sleep 2s");
+	char ch;
+	gotoxy(19,17);
+	cout<<"Press any key to continue....";
+	cin>>ch;
+	cin.ignore();
+	system("clear");
+}
