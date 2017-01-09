@@ -1,3 +1,8 @@
+	
+
+		/****************************************************************\
+               |		   HEADER FILES USED IN PROJECT			  |
+    		\****************************************************************/
 
 #include <iostream>
 #include <cstdlib>
@@ -5,13 +10,17 @@
 #include <fstream>
 #include <cstdio>
 #include <cstring>
-#include "troll"
-#include "cmorse"
+#include "troll"	
+#include "cmorse"	//  Header for controlling GPIO pin.
 
 
 using namespace std;
 
-fstream fp;
+
+		/****************************************************************\
+               |		   CLASS USED IN PROJECT			  |
+    		\****************************************************************/
+
 
 class info
 {
@@ -23,7 +32,7 @@ class info
         void getinfo();
         void seeinfo();
         char* passMsg();   
-}st;
+};
 
 char* info::passMsg()
 {
@@ -54,6 +63,16 @@ void info::getinfo()
     blinkstring(Msg);
 
 }
+		
+		/****************************************************************\
+               |	GLOBAL DECLARATION OF STREAM OBJECT, CLASS OBJECT	  |
+    		\****************************************************************/
+
+info st;
+fstream fp;
+
+
+
 
 void entermsg()
 {
