@@ -20,8 +20,7 @@ void setgpiopin (int pinnum)
     sprintf(setpin, "gpio mode %d out", pinnum);
     system(setpin);
 	sprintf(ledon, "gpio write %d 1", pinnum);
-    sprintf(ledoff, "gpio write %d 0", pinnum);
-	
+    sprintf(ledoff, "gpio write %d 0", pinnum);	
 }
 
 void blinkt(float time) 
@@ -423,8 +422,8 @@ int blinkspace()
 }
 
 int blinkstring(char * string) 
-{ 								// Blink a character array (string)
-	int length = strlen(string);				// in morse code.
+{ 							// Blink a character array (string)
+	int length = strlen(string);			// in morse code.
 	int count = 0;	
 	while (count < length) 
 	{
