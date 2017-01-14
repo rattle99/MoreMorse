@@ -19,7 +19,7 @@
 #include <fstream>
 #include <cstdio>
 #include <cstring>
-#include "troll"	
+#include "troll"	//  Header for intro(), msgroll().
 #include "cmorse"	//  Header for controlling GPIO pin.
 
 
