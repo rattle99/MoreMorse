@@ -8,3 +8,9 @@ Before compiling **MoreMorse.cpp** install *'toilet'* and *'figlet'* using :
 ### Here is a small morse binary tree for reference
 
 ![Morse Tree](https://raw.githubusercontent.com/rattle99/MoreMorse/master/Image/morse_listening.png)
+
+### Chart for international morse code
+
+![Chart](https://upload.wikimedia.org/wikipedia/commons/b/b5/International_Morse_Code.svg)
+
+>- **NOTE:** In my header, a space is rapid 10 blinks to make it easily distinguishable.
