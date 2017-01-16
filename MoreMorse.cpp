@@ -50,27 +50,27 @@ char* info::passMsg()
 		
 void info::seeinfo()
 {
-    cout<<"\n\n\t Message label : "<<label
-        <<"\n\n\t Message entered on : "<<FullDate
-        <<"\n\n\t "<<Msg<<"\n";
+   	 cout<<"\n\n\t Message label : "<<label
+       	     <<"\n\n\t Message entered on : "<<FullDate
+             <<"\n\n\t "<<Msg<<"\n";
 }
 
 void info::getinfo()
 {
-    time_t rawtime;
-    tm *timeinfo;
-    time (&rawtime);
-    timeinfo = localtime(&rawtime);
-    strftime (FullDate,50,"%c",timeinfo);
+   	 time_t rawtime;
+  	 tm *timeinfo;
+   	 time (&rawtime);
+ 	 timeinfo = localtime(&rawtime);
+  	 strftime (FullDate,50,"%c",timeinfo);
 
-    cout<<"   Enter your message : ";
-    cin.getline(Msg,50);
+  	 cout<<"   Enter your message : ";
+  	 cin.getline(Msg,50);
 
-    cout<<"\n   Enter a label for this message :  ";
-    cin.getline(label,30);
+ 	 cout<<"\n   Enter a label for this message :  ";
+ 	 cin.getline(label,30);
     
-    blinkstring(Msg);
-
+  	 blinkstring(Msg);
+	
 }
 
 
@@ -90,13 +90,13 @@ fstream fp;
 
 void entermsg()
 {
-    cout<<"\n\n\t\t Enter Message\n "
-        <<"\t\t~--------------~\n\n";
-    fp.open("info.dat",ios::app);
-    st.getinfo();
-    fp.write((char*)&st,sizeof(st));
-    fp.close();
-    cout<<"\n\n   Message Logged!";
+    	cout<<"\n\n\t\t Enter Message\n "
+            <<"\t\t~--------------~\n\n";
+   	 fp.open("info.dat",ios::app);
+   	 st.getinfo();
+   	 fp.write((char*)&st,sizeof(st));
+   	 fp.close();
+   	 cout<<"\n\n   Message Logged!";
 }
 
 
