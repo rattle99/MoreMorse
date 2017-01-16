@@ -16,11 +16,11 @@ char ledoff[40];
 
 void setgpiopin (int pinnum)
 {
-    char setpin[50];
-    sprintf(setpin, "gpio mode %d out", pinnum);
-    system(setpin);
+    	char setpin[50];
+   	sprintf(setpin, "gpio mode %d out", pinnum);
+    	system(setpin);
 	sprintf(ledon, "gpio write %d 1", pinnum);
-    sprintf(ledoff, "gpio write %d 0", pinnum);	
+    	sprintf(ledoff, "gpio write %d 0", pinnum);	
 }
 
 void blinkt(float time) 
