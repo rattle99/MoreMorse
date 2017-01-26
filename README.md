@@ -14,3 +14,8 @@ Before compiling **MoreMorse.cpp** install *'toilet'* and *'figlet'* using :
 ![Chart](https://upload.wikimedia.org/wikipedia/commons/b/b5/International_Morse_Code.svg)
 
 >- **NOTE:** In my header, a space is rapid 10 blinks to make it easily distinguishable.
+
+## License
+The MIT License (MIT)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE)
+Copyright (c) 2017 Aurko Mitra
