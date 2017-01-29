@@ -13,12 +13,8 @@
 		       |		   HEADER FILES USED IN PROJECT			  |
 			\****************************************************************/
 
-#include <iostream>
-#include <cstdlib>
 #include <ctime>
 #include <fstream>
-#include <cstdio>
-#include <cstring>
 #include "troll"	//  Header for intro(), msgroll().
 #include "cmorse"	//  Header for controlling GPIO pin.
 
